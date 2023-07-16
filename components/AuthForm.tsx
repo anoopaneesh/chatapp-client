@@ -20,7 +20,7 @@ const AuthForm = () => {
     }
     if(isLogin){
       login(user).then((data)=>{
-
+        console.log(data)
       }).catch(err => {
         toast({
           title: "Uh oh! Something went wrong.",
@@ -31,7 +31,7 @@ const AuthForm = () => {
       })
     }else{
       signup(user).then(data => {
-
+        console.log(data)
       }).catch(err => {
         toast({
           title: "Uh oh! Something went wrong.",
